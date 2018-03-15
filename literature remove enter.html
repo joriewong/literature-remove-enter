@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Literature Remove Enter</title>
+	<style>
+		.container {
+			width: 1280px;
+			margin: 0 auto;
+		}
+	</style>
+	<script>
+		function removeEnter() {
+			result.value = copy.value.replace(/[\r\n]+/g, ' ');
+		}
+	</script>
+</head>
+<body>
+	<div class="container">
+		<h2>Literature Remove Enter</h2>
+		<textarea name="copy" id="copy" cols="85" rows="52" placeholder="Please paste your literature here!" onchange="removeEnter()"></textarea>
+		<textarea name="result" id="result" cols="85" rows="52" placeholder='Then click here copy your literature without "Enter"!'></textarea>
+	</div>
+</body>
+</html>
