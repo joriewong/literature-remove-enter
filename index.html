@@ -11,6 +11,9 @@
 			width: 1280px;
 			margin: 0 auto;
 		}
+		h2 > span {
+			vertical-align: 30px;
+		}
 	</style>
 	<script>
 		function removeEnter() {
@@ -20,9 +23,12 @@
 </head>
 <body>
 	<div class="container">
-		<h2>Literature Remove Enter</h2>
-		<textarea name="copy" id="copy" cols="85" rows="52" placeholder="Please paste your literature here!" onchange="removeEnter()"></textarea>
-		<textarea name="result" id="result" cols="85" rows="52" placeholder='Then click here copy your literature without "Enter"!'></textarea>
+		<h2>
+			<img width=180 src="./images/literature remove enter.gif">
+			<span>Literature Remove Enter</span>
+		</h2>
+		<textarea name="copy" id="copy" cols="85" rows="48" placeholder="Please paste your literature here!" onchange="removeEnter()"></textarea>
+		<textarea name="result" id="result" cols="85" rows="48" placeholder='Then click here copy your literature without "Enter"!'></textarea>
 	</div>
 </body>
 </html>
